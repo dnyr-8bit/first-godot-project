@@ -13,6 +13,10 @@ rem Generate the Visual Studio project files.
 scons platform=windows vsproj=yes
 if errorlevel 1 goto :end
 
+rem Configure Visual Studio to open the game project when debugging the editor.
+copy /y "%PROJECT_ROOT%GodotEngine.vcxproj.user.template" "godot.vcxproj.user" >nul
+if errorlevel 1 goto :end
+
 rem Put the solution in the repository root and point it to the project in Engine.
 powershell.exe -NoProfile -ExecutionPolicy Bypass -Command ^
     "$ErrorActionPreference = 'Stop';" ^
