@@ -1,0 +1,39 @@
+# Godot 4+ specific ignores
+.godot/
+
+# Godot 3.x
+.import/
+
+# Exported builds
+/export/
+/build/
+
+# Mono / .NET
+.mono/
+data_*/
+mono_crash.*.json
+
+# Visual Studio / JetBrains
+.vs/
+.idea/
+*.sln
+*.csproj
+*.user
+*.userprefs
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*~
+
+# Crash dumps
+*.dmp
+
+# Logs
+*.log
